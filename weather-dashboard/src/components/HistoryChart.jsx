@@ -7,17 +7,6 @@ import {
 } from "recharts";
 import dayjs from "dayjs";
 
-/**
- * HistoryChart — flexible chart for multi-day historical data.
- * Props:
- *   data        { time:[], key:[],... }
- *   series      [{ key, label, color, type?:'area'|'line'|'bar', hidden?:bool, format?:(v)=>str }]
- *   title       string
- *   chartType   'area' | 'bar' | 'multiline'
- *   unit        string (appended to Y axis ticks)
- *   yAxisFormatter  (v) => string
- *   tooltipExtra    (dataPoint) => string | null
- */
 const HistoryChart = ({
   data, series = [], title = "",
   chartType = "area", unit = "",
